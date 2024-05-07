@@ -1,0 +1,4 @@
+docker build -t flask-app .
+docker build -t database .
+docker network create mynetwork
+docker compose up
