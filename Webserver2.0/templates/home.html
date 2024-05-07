@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        /* Additional inline styles for the home page */
+        body {
+            font-family: Arial, sans-serif; /* Change the font family for the entire page */
+            background-color: #f9f9f9; /* Change background color */
+            color: #333; /* Change text color */
+        }
+        h1 {
+            font-size: 36px; /* Increase font size for 'Welcome to Our Website' heading */
+            text-align: center;
+            color: #007bff; /* Change heading color */
+            margin-top: 50px; /* Add margin to the top */
+        }
+        h2 {
+            font-size: 30px; /* Increase font size for 'Welcome to Our Website' heading */
+            text-align: center;
+            color: #000000; /* Change heading color */
+            margin-top: 20px; /* Add margin to the top */
+        }
+        .introduction {
+            text-align: center;
+            margin-bottom: 30px; /* Add margin to the bottom */
+        }
+        .section {
+            margin: 0 auto; /* Center align the sections */
+            width: 80%; /* Set section width */
+            background-color: #fff; /* Set section background color */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+            padding: 20px; /* Add padding to the sections */
+            margin-bottom: 30px; /* Add margin to the bottom */
+        }
+        .team-data {
+            text-align: center;
+        }
+        .contact-info {
+            text-align: center;
+        }
+        nav {
+            text-align: center; /* Center align the navigation links */
+            margin-top: 20px; /* Add margin to the top */
+            font-size: 24px; /* Make menu items larger */
+        }
+        nav a {
+            text-decoration: none; /* Remove default underline */
+            color: #007bff; /* Change link color */
+            font-weight: bold; /* Make the font bold */
+            margin: 0 15px; /* Add margin around the links */
+            transition: color 0.3s; /* Add smooth color transition */
+        }
+        nav a:hover {
+            color: #0056b3; /* Change link color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Website</h1>
+    <div class="introduction">
+        <h2>Introduction</h2>
+        <p>Welcome to our Cloud Computing Project!</p>
+        <p>We hope you have a good time.</p>
+        <p>Thank you.</p>
+    </div>
+    <div class="section team-data">
+        <h2>Team Data</h2>
+        <p>Explore information about our team members and their contributions.</p>
+        <nav>
+            <a href="{{ url_for('index') }}">View Team Data</a>
+        </nav>
+    </div>
+    <div class="section contact-info">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to contact us.</p>
+        <nav>
+            <a href="{{ url_for('contact') }}">Contact Us</a>
+        </nav>
+    </div>
+</body>
+</html>

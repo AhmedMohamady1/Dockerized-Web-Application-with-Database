@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        /* Additional inline styles for the contact page */
+        body {
+            font-family: Arial, sans-serif; /* Change the font family for the entire page */
+            background-color: #f4f4f4; /* Change background color */
+            color: #333; /* Change text color */
+        }
+        h1 {
+            font-size: 36px; /* Increase font size for 'Contact Us' heading */
+            margin-top: 30px; /* Add some margin to the top */
+            color: #007bff; /* Change heading color */
+            text-align: center;
+        }
+        p {
+            font-size: 20px; /* Decrease font size for paragraph */
+            margin-bottom: 20px; /* Add some margin to the bottom */
+            text-align: center;
+        }
+        ul {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+            text-align: center;
+        }
+        ul li {
+            font-size: 18px; /* Decrease font size for list items */
+            margin: 10px 0; /* Add margin for spacing between email items */
+            text-align: center;
+        }
+        nav {
+            margin-top: 50px; /* Increase spacing and place menu below */
+            font-size: 20px; /* Make menu items larger */
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none; /* Remove underline from links */
+            color: #007bff; /* Change link color */
+            transition: color 0.3s; /* Add smooth color transition */
+            text-align: center;
+        }
+        nav a:hover {
+            color: #0056b3; /* Change link color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>If you have any questions or need assistance, please reach out to us via email:</p>
+    <ul>
+        <li>Email: omar143@example.com</li>
+        <li>Email: ahmed18@example.com</li>
+        <li>Email: mohamed128@example.com</li>
+        <li>Email: tarek13@example.com</li>
+        <li>Email: fares1281@example.com</li>
+    </ul>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('index') }}">Team Data</a>
+    </nav>
+</body>
+</html>

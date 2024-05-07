@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Member's Data</title>
+    <link rel="stylesheet" href="static/style.css">
+
+    <style>
+        /* Additional inline styles for the team member's data page */
+        body {
+            font-family: Arial, sans-serif; /* Change the font family for the entire page */
+            background-color: #f9f9f9; /* Change background color */
+            color: #333; /* Change text color */
+        }
+        h1 {
+            font-size: 36px; /* Increase font size for 'Team Member's Data' heading */
+            text-align: center;
+            color: #007bff; /* Change heading color */
+            margin-top: 50px; /* Add margin to the top */
+            position: relative; /* Enable positioning for the image */
+        }
+        .top-right {
+            position: absolute; /* Position the image absolutely */
+            top: 0;
+            right: 0;
+            width: 100px; /* Adjust image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        table {
+            margin: 20px auto; /* Center align the table */
+            border-collapse: collapse; /* Collapse table borders */
+            width: 80%; /* Set table width */
+            background-color: #fff; /* Set table background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+        }
+        th, td {
+            padding: 10px; /* Add padding to table cells */
+            border-bottom: 1px solid #000000; /* Add bottom border to table rows */
+            text-align: left; /* Align text to the left */
+        }
+        th {
+            background-color: #000000; /* Set background color for table header */
+            font-weight: bold; /* Make table header bold */
+        }
+        nav {
+            text-align: center; /* Center align the navigation links */
+            margin-top: 20px; /* Add margin to the top */
+            font-size: 24px; /* Set font size for navigation links */
+        }
+        nav a {
+            text-decoration: none; /* Remove default underline */
+            color: #007bff; /* Change link color */
+            font-weight: bold; /* Make the font bold */
+            margin: 0 10px; /* Add margin around the links */
+            transition: color 0.3s; /* Add smooth color transition */
+        }
+        nav a:hover {
+            color: #0056b3; /* Change link color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Team Member's Data
+        <img src="static/image.png" alt="Image" class="top-right">
+    </h1>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here by JavaScript -->
+        </tbody>
+    </table>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+    </nav>
+    <script src="static/script.js"></script>
+</body>
+</html>
